@@ -1,0 +1,7 @@
+@import "./base.css";
+@import "./sections.css";
+
+.muted {
+  color: #888;
+  font-style: italic;
+}
