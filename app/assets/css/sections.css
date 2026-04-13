@@ -1,4 +1,4 @@
-#hero,
+#hero .content,
 #cta {
   display: flex;
   flex-direction: column;
@@ -7,6 +7,20 @@
   .iconify {
     margin-bottom: 1rem;
     color: var(--pico-primary);
+  }
+}
+#hero {
+  gap: 4rem;
+  .hero-image {
+    padding: 1rem;
+    height: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  .content {
+    text-align: left;
+    align-items: start;
   }
 }
 #cta {

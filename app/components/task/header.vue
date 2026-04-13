@@ -29,7 +29,7 @@ const addTask = async () => {
         <li><h1>Tasks</h1></li>
         <li class="filter-wrapper">
           <details class="dropdown">
-            <summary>
+            <summary class="filter-btn">
               {{ filter.charAt(0).toUpperCase() + filter.slice(1) }}
             </summary>
             <ul dir="rtl">
@@ -41,8 +41,10 @@ const addTask = async () => {
         </li>
       </ul>
       <ul>
-        <li class="new-task-btn">
-          <button @click="dialog?.showModal()">New Task</button>
+        <li>
+          <button @click="dialog?.showModal()" class="new-task-btn">
+            New Task
+          </button>
           <dialog ref="dialog">
             <article>
               <header>
@@ -81,12 +83,18 @@ const addTask = async () => {
   width: 8.5rem;
 }
 .dropdown {
-  width: 8.5rem;
   text-align: center;
 }
+summary.filter-btn {
+  height: 2.1rem !important;
+  padding: 0.25rem 1rem !important;
+}
 .new-task-btn {
-  button {
-    padding: 0.75rem;
+  padding: 0.25rem 1rem;
+}
+ul {
+  li {
+    padding: 0.65rem;
   }
 }
 </style>

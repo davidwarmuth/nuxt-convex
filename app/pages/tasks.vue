@@ -19,7 +19,7 @@ definePageMeta({
 <style scoped>
 #tasks {
   margin: 0 auto;
-  padding: 0rem;
+  padding: 1.5rem 0rem;
   max-width: 720px;
 }
 </style>

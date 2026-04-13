@@ -19,6 +19,7 @@ const emit = defineEmits(["update:modelValue", "submit"]);
         @input="
           emit('update:modelValue', ($event.target as HTMLInputElement).value)
         "
+        autofocus
       />
       <button type="submit" :disabled="!modelValue" :aria-busy="isAdding">
         {{ isAdding ? "Adding..." : "Add" }}
